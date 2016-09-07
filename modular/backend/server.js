@@ -6,7 +6,7 @@ var userData =[
 	{'id':3, 'fname':'Larry' , 'lname':'the Bird','username':'@twitter'},
 
 
-]
+];
 app.use(function(req,res,next){
 	res.header("Access-Control-Allow-Origin","*");
 	res.header("Access-Control-Allow-Headers","Origin, X-Requested-With,Content-Type,Accept");
@@ -23,7 +23,7 @@ app.get('/users',function(request,response){
 	response.send(JSON.stringify(userData));
 });
 
-app.use('/webapp',express.static('webapp'));
+
 
 app.listen(3001,function(){
 	console.log('Server started on port 3001!');

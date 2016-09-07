@@ -42,12 +42,12 @@
 				//construct jQuery template for user row
 				var template = jQuery('<tr><th scope="row" class="table-id"></th><td class="table-fname"></td><td class="table-lname"></td><td class="table-username"></td></tr>')
 				//populate user template with user data
-				template.find('table-id').html(responseItem.id);
-				template.find('table-fname').html(responseItem.fname);
-				template.find('table-lname').html(responseItem.lnme);
-				template.find('table-username').html(responseItem.username);
+				template.find('.table-id').html(responseItem.id);
+				template.find('.table-fname').html(responseItem.fname);
+				template.find('.table-lname').html(responseItem.lname);
+				template.find('.table-username').html(responseItem.username);
 				
-				//append twmplate to user data container
+				//append template to user data container
 				userContainer.append(template);
 				
 			}
